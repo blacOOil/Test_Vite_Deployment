@@ -1,10 +1,8 @@
 import { defineConfig } from 'vite'
-import vitePluginString from 'vite-plugin-string'
-
-
+import glsl from 'vite-plugin-string'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [vitePluginString()],
+  plugins: [glsl()],
   base: '/Test_Vite_Deployment/',
 })
