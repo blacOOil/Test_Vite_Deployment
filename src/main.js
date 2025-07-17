@@ -1,4 +1,12 @@
 
+document.addEventListener("scroll", function () {
+  const header = document.querySelector(".header-container"); // Match your HTML
+  if (window.scrollY > 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   const buttons = document.querySelectorAll('.ExpButtonList button');
